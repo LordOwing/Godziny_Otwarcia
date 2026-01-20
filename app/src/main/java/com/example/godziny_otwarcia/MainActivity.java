@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         LocalTime selectedTime = LocalTime.of(hour, minute);
-        LocalTime openingTime = LocalTime.of(8, 0);    // 08:00
-        LocalTime closingTime = LocalTime.of(16, 0);   // 16:00
+        LocalTime openingTime = LocalTime.of(8, 0);
+        LocalTime closingTime = LocalTime.of(16, 0);
 
 
         boolean isOpen = !selectedTime.isBefore(openingTime) && selectedTime.isBefore(closingTime);
